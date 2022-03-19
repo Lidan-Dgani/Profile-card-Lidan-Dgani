@@ -1,0 +1,246 @@
+body {
+  height: 98vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dccbdd;
+}
+
+.maincard {
+  width: 44vh;
+  height: 75vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "topcard" "midcard" "navcard" "bottumcard";
+  -ms-grid-rows: 17vh 17vh 5vh 36vh;
+      grid-template-rows: 17vh 17vh 5vh 36vh;
+  border: black solid 2px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 1vh;
+}
+
+.uppermaincard {
+  width: 44vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: topcard;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3f2971), color-stop(#5a2b7c), to(#722d88));
+  background: linear-gradient(#3f2971, #5a2b7c, #722d88);
+}
+
+.topnav {
+  width: 15vh;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.backicon {
+  margin-top: 1vh;
+  position: relative;
+  left: 1vh;
+}
+
+.icons {
+  width: 7vh;
+  margin-top: 1vh;
+  position: relative;
+  left: 28vh;
+}
+
+.fullname {
+  width: 17vh;
+  margin: 0 0;
+  font-size: 3vh;
+  color: white;
+  position: relative;
+  top: 5vh;
+  left: 23vh;
+}
+
+.mid-maincard {
+  width: 44vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: midcard;
+}
+
+#mepic {
+  width: 14vh;
+  height: 14vh;
+  padding: 1vh;
+  border-radius: 8vh;
+  border: 1px solid black;
+  position: relative;
+  right: -3vh;
+  bottom: 9vh;
+  background: white;
+}
+
+.container-seceand-title {
+  width: 21vh;
+  height: 10vh;
+  font-size: 2vh;
+  position: relative;
+  bottom: 15vh;
+  left: 21vh;
+}
+
+#professional {
+  margin: 0;
+}
+
+#location {
+  color: #bcbcbc;
+  margin: 0;
+  position: relative;
+  left: 3vh;
+}
+
+.button-container {
+  width: 41vh;
+  height: 7vh;
+  position: relative;
+  bottom: 17vh;
+  left: 2vh;
+}
+
+#btm-fllow {
+  width: 15vh;
+  height: 5vh;
+  font-size: 17px;
+  color: #93d7b0;
+  background-color: white;
+  padding: 0.5vh;
+  margin: 0 2.5vh;
+  border: 1px solid #93d7b0;
+  border-radius: 2vh;
+  -webkit-transition: all;
+  transition: all;
+}
+
+#btm-fllow:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: #93d7b0;
+}
+
+#btm-contact {
+  width: 15vh;
+  height: 5vh;
+  font-size: 17px;
+  color: #7c2e8d;
+  background-color: white;
+  padding: 0.5vh;
+  margin: 0 2vh;
+  border: 1px solid #7c2e8d;
+  border-radius: 2vh;
+  -webkit-transition: all;
+  transition: all;
+}
+
+#btm-contact:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: #7c2e8d;
+}
+
+.cardnav {
+  height: 4vh;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: navcard;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.list {
+  width: 14.5vh;
+  height: 4vh;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottumcard {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: bottumcard;
+}
+
+#exptitle {
+  font-size: 2vh;
+  color: #e0e0e0;
+  position: relative;
+  left: 3vh;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 19vh;
+  right: 17vh;
+}
+
+.dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explist {
+  width: 19vh;
+  height: 25vh;
+  position: relative;
+  bottom: 9.4vh;
+  left: 9vh;
+}
+
+.mainsub {
+  font-size: 2vh;
+  position: relative;
+  top: 2vh;
+  margin-top: 1.2vh;
+  margin-bottom: 3.1vh;
+}
+
+.secsub {
+  height: 1.2vh;
+  color: #bcbcbc;
+  margin-bottom: 2.5vh;
+  font-size: 2vh;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,223 @@
+//body//
+$bgcolor:rgb(220, 203, 221);
+//card-container//
+$card-width:44vh;
+$card-hieght:75vh;
+$card-border-color:black;
+$card-border-width:2px;
+$card-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+$cardbg:white;
+//card-top-bg//
+$cardtopbgcolor:linear-gradient(#3f2971, #5a2b7c, #722d88);
+
+
+
+body {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgcolor;
+}
+
+.maincard {
+    width: $card-width;
+    height: $card-hieght;
+    display: grid;
+    grid-template-areas:
+        "topcard"
+        "midcard"
+        "navcard"
+        "bottumcard";
+    grid-template-rows: 17vh 17vh 5vh 36vh;
+    border: $card-border-color solid $card-border-width;
+    box-shadow: $card-box-shadow;
+    background-color: $cardbg;
+    border-radius: 1vh;
+}
+
+.uppermaincard {
+    width: $card-width;
+    grid-area: topcard;
+    background: $cardtopbgcolor;
+}
+
+.topnav {
+    width: 15vh;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.backicon {
+    margin-top: 1vh;
+    position: relative;
+    left: 1vh;
+}
+
+.icons {
+    width: 7vh;
+    margin-top: 1vh;
+    position: relative;
+    left: 28vh;
+}
+
+.fullname {
+    width: 17vh;
+    margin: 0 0;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 5vh;
+    left: 23vh;
+}
+
+.mid-maincard {
+    width: $card-width;
+    grid-area: midcard;
+}
+
+#mepic {
+    width: 14vh;
+    height: 14vh;
+    padding: 1vh;
+    border-radius: 8vh;
+    border: 1px solid black;
+    position: relative;
+    right: -3vh;
+    bottom: 9vh;
+    background: white
+}
+
+.container-seceand-title {
+    width: 21vh;
+    height: 10vh;
+    font-size: 2vh;
+    position: relative;
+    bottom: 15vh;
+    left: 21vh;
+}
+
+#professional {
+    margin: 0;
+}
+
+#location {
+    color: rgb(188, 188, 188);
+    margin: 0;
+    position: relative;
+    left: 3vh;
+}
+
+.button-container {
+    width: 41vh;
+    height: 7vh;
+    position: relative;
+    bottom: 17vh;
+    left: 2vh;
+}
+
+#btm-fllow {
+    width: 15vh;
+    height: 5vh;
+    font-size: 17px;
+    color: rgb(147, 215, 176);
+    background-color: white;
+    padding: 0.5vh;
+    margin: 0 2.5vh;
+    border: 1px solid rgb(147, 215, 176);
+    border-radius: 2vh;
+    transition: all;
+}
+
+#btm-fllow:hover {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(147, 215, 176);
+}
+
+#btm-contact {
+    width: 15vh;
+    height: 5vh;
+    font-size: 17px;
+    color: rgb(124, 46, 141);
+    background-color: white;
+    padding: 0.5vh;
+    margin: 0 2vh;
+    border: 1px solid rgb(124, 46, 141);
+    border-radius: 2vh;
+    transition: all;
+}
+
+#btm-contact:hover {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(124, 46, 141);
+}
+
+.cardnav {
+    height: 4vh;
+    grid-area: navcard;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.list {
+    width: 14.5vh;
+    height: 4vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.bottumcard {
+    grid-area: bottumcard;
+}
+
+#exptitle {
+    font-size: 2vh;
+    color: rgb(224, 224, 224);
+    position: relative;
+    left: 3vh;
+}
+
+.aside {
+    display: flex;
+    position: relative;
+    transform: rotate(90deg);
+    top: 19vh;
+    right: 17vh;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+}
+
+.explist {
+    width: 19vh;
+    height: 25vh;
+    position: relative;
+    bottom: 9.4vh;
+    left: 9vh;
+
+}
+
+.mainsub {
+    font-size: 2vh;
+    position: relative;
+    top: 2vh;
+    margin-top: 1.2vh;
+    margin-bottom: 3.1vh;
+}
+
+.secsub {
+    height: 1.2vh;
+    color: #bcbcbc;
+    margin-bottom: 2.5vh;
+    font-size: 2vh;
+}
